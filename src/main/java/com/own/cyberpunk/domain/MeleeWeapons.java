@@ -1,0 +1,31 @@
+package com.own.cyberpunk.domain;
+
+import com.own.cyberpunk.enumeration.Concealability;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "meleeWeapons")
+public class MeleeWeapons {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column
+    private Integer accuracy;
+
+    @Enumerated(EnumType.STRING)
+    private Concealability concealability;
+
+    @Column
+    private String damage;
+
+    @ManyToOne
+    @JoinColumn(name = "fighters_id")
+    private Fighter fighter;
+}
