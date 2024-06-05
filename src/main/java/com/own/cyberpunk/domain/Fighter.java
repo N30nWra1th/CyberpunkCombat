@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
@@ -32,9 +31,9 @@ public class Fighter {
     @Enumerated(EnumType.STRING)
     private Skills skills;
 
-    @OneToMany(mappedBy = "guns")
+    @OneToMany(mappedBy = "fighter")
     private List<Gun> guns;
 
-    @OneToMany(mappedBy = "meleeWeapons")
+    @OneToMany(mappedBy = "fighter")
     private List<MeleeWeapons> meleeWeapons;
 }

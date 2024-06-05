@@ -26,6 +26,6 @@ public class MeleeWeapons {
     private String damage;
 
     @ManyToOne
-    @JoinColumn(name = "fighters_id")
+    @JoinColumn(name = "fighter_id")
     private Fighter fighter;
 }

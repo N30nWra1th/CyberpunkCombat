@@ -43,6 +43,6 @@ public class Gun {
     private Integer range;
 
     @ManyToOne
-    @JoinColumn(name = "fighters_id")
+    @JoinColumn(name = "fighter_id")
     private Fighter fighter;
 }

@@ -7,9 +7,9 @@ server:
       force: true
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/cyberpunkcombat?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:postgresql://localhost:5432/cyberpunk-combat?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: postgres
-    password:
+    password: cp2020
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
