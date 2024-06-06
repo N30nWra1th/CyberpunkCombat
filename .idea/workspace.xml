@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Started creating domains and enumerations.">
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Establishing database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Fighter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Attributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Attributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Concealability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Concealability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Reliability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Reliability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Skills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Skills.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/WeaponTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/WeaponTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/Fighter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/Fighter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/enumeration/Attributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/enumeration/Attributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/enumeration/Skills.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/enumeration/Skills.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/application.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +105,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716241438088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Establishing database">
+      <option name="closed" value="true" />
+      <created>1717620691576</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717620691576</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started creating domains and enumerations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started creating domains and enumerations." />
+    <MESSAGE value="Establishing database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Establishing database" />
   </component>
 </project>
