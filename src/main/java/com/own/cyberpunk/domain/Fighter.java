@@ -4,6 +4,7 @@ import com.own.cyberpunk.enumeration.Attributes;
 import com.own.cyberpunk.enumeration.Skills;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "fighter")
+@Builder
 public class Fighter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
