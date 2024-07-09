@@ -1,13 +1,14 @@
 package com.own.cyberpunk.controller;
 
+import com.own.cyberpunk.domain.Fighter;
 import com.own.cyberpunk.dto.FighterDto;
 import com.own.cyberpunk.service.FighterService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -21,9 +22,34 @@ public class FighterController {
 
     @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createCharacter(FighterDto fighterDto){
+    public void createCharacter(@RequestBody FighterDto fighterDto) {
         log.info("New fighter has been created successfully.");
         fighterService.createCharacter(fighterDto);
     }
 
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<FighterDto> getCharacters() {
+        try {
+            log.info("Characters have been retrieved successfully.");
+            return fighterService.getAllCharacters();
+
+        } catch (Exception e) {
+            log.error("No characters in database.");
+            return null;
+        }
+
+    }
+
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public FighterDto getCharacter(@PathVariable("id") Long id) {
+        try {
+            log.info("Character with id " + id + " has been retrieved successfully.");
+            return fighterService.getCharacter(id);
+        } catch (Exception e) {
+            log.error("Character with id " + id + " not found.");
+            return null;
+        }
+    }
 }

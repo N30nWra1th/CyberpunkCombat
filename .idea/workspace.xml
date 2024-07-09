@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Establishing database">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Database created, writing logic for base methods">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/repository/FighterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/repository/FighterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/Fighter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/Fighter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/FighterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/FighterDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Attributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Attributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Skills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/enumeration/Skills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +48,10 @@
     &quot;accountId&quot;: &quot;99bce4a5-82d2-4ec2-8d59-fd955327bf35&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -158,7 +160,8 @@
       <workItem from="1719510848917" duration="1112000" />
       <workItem from="1719929734419" duration="1829000" />
       <workItem from="1720098468457" duration="1220000" />
-      <workItem from="1720121042473" duration="618000" />
+      <workItem from="1720121042473" duration="2576000" />
+      <workItem from="1720427984616" duration="9835000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -192,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719342233761</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Database created, writing logic for base methods">
+      <option name="closed" value="true" />
+      <created>1720122331433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720122331433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started creating domains and enumerations." />
     <MESSAGE value="Establishing database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Establishing database" />
+    <MESSAGE value="Database created, writing logic for base methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database created, writing logic for base methods" />
   </component>
 </project>
