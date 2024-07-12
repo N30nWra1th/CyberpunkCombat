@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NotFound;
 
+import java.util.Map;
+
 
 @Data
 @NoArgsConstructor
@@ -19,7 +21,7 @@ public class FighterDto {
     @NotFound
     private String role;
     @NotFound
-    private Attributes attributes;
+    private Map<Attributes, Integer> attributes;
     @NotFound
-    private Skills skills;
+    private Map<Skills, Integer> skills;
 }

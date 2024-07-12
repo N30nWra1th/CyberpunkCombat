@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
 
 @Data
 @NoArgsConstructor
@@ -27,11 +28,19 @@ public class Fighter {
     @Column
     private String role;
 
-    @Enumerated(EnumType.STRING)
-    private Attributes attributes;
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(name = "fighter_attributes", joinColumns = @JoinColumn(name = "fighter_id"))
+    @MapKeyColumn(name = "attribute")
+    @MapKeyEnumerated(EnumType.STRING)
+    @Column
+    private Map<Attributes, Integer> attributes;
 
-    @Enumerated(EnumType.STRING)
-    private Skills skills;
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(name = "fighter_skills", joinColumns = @JoinColumn(name = "fighter_id"))
+    @MapKeyColumn(name = "skill")
+    @MapKeyEnumerated(EnumType.STRING)
+    @Column
+    private Map<Skills, Integer> skills;
 
     @OneToMany(mappedBy = "fighter")
     private List<Gun> guns;
