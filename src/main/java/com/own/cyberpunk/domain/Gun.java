@@ -1,7 +1,5 @@
 package com.own.cyberpunk.domain;
 
-import com.own.cyberpunk.enumeration.Concealability;
-import com.own.cyberpunk.enumeration.Reliability;
 import com.own.cyberpunk.enumeration.WeaponTypes;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -24,8 +22,8 @@ public class Gun {
     @Column
     private Integer accuracy;
 
-    @Enumerated(EnumType.STRING)
-    private Concealability concealability;
+    @Column
+    private String concealability;
 
     @Column
     private String damage;
@@ -36,8 +34,8 @@ public class Gun {
     @Column
     private Integer rateOfFire;
 
-    @Enumerated(EnumType.STRING)
-    private Reliability reliability;
+    @Column
+    private String reliability;
 
     @Column
     private Integer range;

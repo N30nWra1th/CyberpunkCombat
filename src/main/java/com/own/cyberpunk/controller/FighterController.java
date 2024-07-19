@@ -1,10 +1,8 @@
 package com.own.cyberpunk.controller;
 
-import com.own.cyberpunk.domain.Fighter;
 import com.own.cyberpunk.dto.FighterDto;
 import com.own.cyberpunk.service.FighterService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,6 +1,5 @@
 package com.own.cyberpunk.domain;
 
-import com.own.cyberpunk.enumeration.Concealability;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
