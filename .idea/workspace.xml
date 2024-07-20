@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Database created, writing logic for base methods" />
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Database created, writing logic for base methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -158,7 +165,9 @@
       <workItem from="1720778056659" duration="2270000" />
       <workItem from="1720790232609" duration="412000" />
       <workItem from="1721054489958" duration="52000" />
-      <workItem from="1721400828061" duration="965000" />
+      <workItem from="1721400828061" duration="1958000" />
+      <workItem from="1721471016812" duration="538000" />
+      <workItem from="1721473897017" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -224,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721403576007</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Database created, writing logic for base methods">
+      <option name="closed" value="true" />
+      <created>1721404789526</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721404789526</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

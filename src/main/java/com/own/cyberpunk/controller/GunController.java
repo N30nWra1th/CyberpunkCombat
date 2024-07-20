@@ -1,14 +1,12 @@
 package com.own.cyberpunk.controller;
 
 import com.own.cyberpunk.dto.GunDto;
+import com.own.cyberpunk.dto.GunForm;
 import com.own.cyberpunk.service.GunService;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -34,4 +32,14 @@ public class GunController {
         }
     }
 
+    @PostMapping("/add")
+    @ResponseStatus(HttpStatus.CREATED)
+    private void addGun(@RequestBody GunForm gunForm) {
+        try {
+            gunService.addGun(gunForm);
+            log.info("Gun has been added successfully.");
+        } catch (Exception e) {
+            log.error("Gun could not be added.");
+        }
+    }
 }
