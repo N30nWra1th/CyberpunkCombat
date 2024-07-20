@@ -16,14 +16,14 @@ public class Gun {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
+    private String name;
+
     @Enumerated(EnumType.STRING)
     private WeaponTypes weaponTypes;
 
     @Column
     private Integer accuracy;
-
-    @Column
-    private String concealability;
 
     @Column
     private String damage;

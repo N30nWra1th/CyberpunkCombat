@@ -3,7 +3,6 @@ package com.own.cyberpunk.controller;
 import com.own.cyberpunk.dto.GunDto;
 import com.own.cyberpunk.dto.GunForm;
 import com.own.cyberpunk.service.GunService;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -40,6 +39,17 @@ public class GunController {
             log.info("Gun has been added successfully.");
         } catch (Exception e) {
             log.error("Gun could not be added.");
+        }
+    }
+
+    @DeleteMapping("/delete/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    private void deleteGun(@PathVariable Long id) {
+        try {
+            gunService.deleteGun(id);
+            log.info("Gun has been deleted successfully.");
+        } catch (Exception e) {
+            log.error("Gun could not be deleted.");
         }
     }
 }

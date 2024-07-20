@@ -23,12 +23,19 @@ public class GunServiceImpl implements GunService {
 
     @Override
     public List<GunDto> getGuns() {
-        return List.of();
+        return gunRepository.findAll().stream()
+                .map(gun -> modelMapper.map(gun, GunDto.class))
+                .toList();
     }
 
     @Override
     public void addGun(GunForm gunForm) {
         Gun gun = modelMapper.map(gunForm, Gun.class);
         gunRepository.save(gun);
+    }
+
+    @Override
+    public void deleteGun(Long id) {
+        gunRepository.delete(gunRepository.findById(id).orElse(null));
     }
 }

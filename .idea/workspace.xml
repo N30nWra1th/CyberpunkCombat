@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Database created, writing logic for base methods">
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Started adding domain and dto elements to guns, three layers done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Gun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/MeleeWeapons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/MeleeWeapons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" afterDir="false" />
@@ -167,7 +169,8 @@
       <workItem from="1721054489958" duration="52000" />
       <workItem from="1721400828061" duration="1958000" />
       <workItem from="1721471016812" duration="538000" />
-      <workItem from="1721473897017" duration="1359000" />
+      <workItem from="1721473897017" duration="1620000" />
+      <workItem from="1721494802558" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -241,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721404789526</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Started adding domain and dto elements to guns, three layers done.">
+      <option name="closed" value="true" />
+      <created>1721478456232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721478456232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +262,7 @@
     <MESSAGE value="Started creating domains and enumerations." />
     <MESSAGE value="Establishing database" />
     <MESSAGE value="Database created, writing logic for base methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database created, writing logic for base methods" />
+    <MESSAGE value="Started adding domain and dto elements to guns, three layers done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started adding domain and dto elements to guns, three layers done." />
   </component>
 </project>

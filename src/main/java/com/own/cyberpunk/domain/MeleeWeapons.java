@@ -18,9 +18,6 @@ public class MeleeWeapons {
     @Column
     private Integer accuracy;
 
-    @Enumerated(EnumType.STRING)
-    private Concealability concealability;
-
     @Column
     private String damage;
 

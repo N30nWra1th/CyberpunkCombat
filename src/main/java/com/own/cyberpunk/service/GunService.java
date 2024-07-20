@@ -9,4 +9,6 @@ public interface GunService{
     List<GunDto> getGuns();
 
     void addGun(GunForm gunForm);
+
+    void deleteGun(Long id);
 }
