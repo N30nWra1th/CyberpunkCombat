@@ -16,6 +16,9 @@ public class MeleeWeapons {
     private Long id;
 
     @Column
+    private String name;
+
+    @Column
     private Integer accuracy;
 
     @Column

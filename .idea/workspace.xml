@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Started adding domain and dto elements to guns, three layers done.">
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Basic gun functions added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/MeleeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/MeleeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/MeleeForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/repository/MeleeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/MeleeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/Gun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/MeleeWeapons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/domain/MeleeWeapons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/GunForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,8 @@
       <workItem from="1721400828061" duration="1958000" />
       <workItem from="1721471016812" duration="538000" />
       <workItem from="1721473897017" duration="1620000" />
-      <workItem from="1721494802558" duration="1950000" />
+      <workItem from="1721494802558" duration="4599000" />
+      <workItem from="1721649817995" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -252,7 +252,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721478456232</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Basic gun functions added">
+      <option name="closed" value="true" />
+      <created>1721506387575</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721506387575</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Basic gun functions added">
+      <option name="closed" value="true" />
+      <created>1721506543452</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721506543452</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +279,7 @@
     <MESSAGE value="Establishing database" />
     <MESSAGE value="Database created, writing logic for base methods" />
     <MESSAGE value="Started adding domain and dto elements to guns, three layers done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started adding domain and dto elements to guns, three layers done." />
+    <MESSAGE value="Basic gun functions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic gun functions added" />
   </component>
 </project>
