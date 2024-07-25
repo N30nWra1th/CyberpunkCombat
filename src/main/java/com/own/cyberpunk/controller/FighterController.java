@@ -1,6 +1,7 @@
 package com.own.cyberpunk.controller;
 
 import com.own.cyberpunk.dto.FighterDto;
+import com.own.cyberpunk.dto.ShootingDto;
 import com.own.cyberpunk.service.FighterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -49,5 +50,11 @@ public class FighterController {
             log.error("Character with id " + id + " not found.");
             return null;
         }
+    }
+
+    @PostMapping("/{id}/shoot")
+    @ResponseStatus(HttpStatus.OK)
+    public String shoot(@RequestBody ShootingDto shootingDto){
+        fighterService.shoot(shootingDto);
     }
 }

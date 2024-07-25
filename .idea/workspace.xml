@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Basic gun functions added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/MeleeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/MeleeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/MeleeForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/repository/MeleeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/MeleeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" afterDir="false" />
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Melee dtos created, moving on to basic methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +168,10 @@
       <workItem from="1721471016812" duration="538000" />
       <workItem from="1721473897017" duration="1620000" />
       <workItem from="1721494802558" duration="4599000" />
-      <workItem from="1721649817995" duration="299000" />
+      <workItem from="1721649817995" duration="3907000" />
+      <workItem from="1721731341166" duration="3115000" />
+      <workItem from="1721764863704" duration="2273000" />
+      <workItem from="1721899629981" duration="2008000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -268,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721506543452</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Melee dtos created, moving on to basic methods">
+      <option name="closed" value="true" />
+      <created>1721650816913</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721650816913</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +289,7 @@
     <MESSAGE value="Database created, writing logic for base methods" />
     <MESSAGE value="Started adding domain and dto elements to guns, three layers done." />
     <MESSAGE value="Basic gun functions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic gun functions added" />
+    <MESSAGE value="Melee dtos created, moving on to basic methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Melee dtos created, moving on to basic methods" />
   </component>
 </project>
