@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Melee dtos created, moving on to basic methods">
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="First rough version of shooting method. Testing needed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/MeleeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/GunController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/GunController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/MeleeWeapons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/MeleeWeapons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -171,7 +177,9 @@
       <workItem from="1721649817995" duration="3907000" />
       <workItem from="1721731341166" duration="3115000" />
       <workItem from="1721764863704" duration="2273000" />
-      <workItem from="1721899629981" duration="2008000" />
+      <workItem from="1721899629981" duration="4911000" />
+      <workItem from="1722327839799" duration="93000" />
+      <workItem from="1722329026114" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -277,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721650816913</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="First rough version of shooting method. Testing needed.">
+      <option name="closed" value="true" />
+      <created>1721907091523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721907091523</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +306,7 @@
     <MESSAGE value="Started adding domain and dto elements to guns, three layers done." />
     <MESSAGE value="Basic gun functions added" />
     <MESSAGE value="Melee dtos created, moving on to basic methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Melee dtos created, moving on to basic methods" />
+    <MESSAGE value="First rough version of shooting method. Testing needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="First rough version of shooting method. Testing needed." />
   </component>
 </project>

@@ -52,9 +52,9 @@ public class FighterController {
         }
     }
 
-    @PostMapping("/{id}/shoot")
+    @PostMapping("/shoot")
     @ResponseStatus(HttpStatus.OK)
     public String shoot(@RequestBody ShootingDto shootingDto){
-        fighterService.shoot(shootingDto);
+        return fighterService.shoot(shootingDto);
     }
 }

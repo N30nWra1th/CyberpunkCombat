@@ -52,4 +52,15 @@ public class GunController {
             log.error("Gun could not be deleted.");
         }
     }
+
+    @PatchMapping("/assign/{fighterId}/{gunId}")
+    @ResponseStatus(HttpStatus.OK)
+    private void assignGun(@PathVariable Long fighterId, @PathVariable Long gunId) {
+        try {
+            gunService.assignGun(fighterId, gunId);
+            log.info("Gun has been assigned successfully.");
+        } catch (Exception e) {
+            log.error("Gun could not be assigned.");
+        }
+    }
 }

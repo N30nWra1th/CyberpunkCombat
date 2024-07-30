@@ -68,14 +68,20 @@ public class FighterServiceImpl implements FighterService {
 
     @Override
     public String shoot(ShootingDto shootingDto) {
+        //getting fighter by id for skill and attribute points
         Long id = shootingDto.getId();
+        Fighter fighter = fighterRepository.findById(id).orElse(null);
+        //getting skill and target range from shootingDto
         String skill = shootingDto.getSkill();
         Integer targetRange = shootingDto.getTargetRange();
-        Fighter fighter = fighterRepository.findById(id).orElse(null);
+        //getting range of the gun
         int range = gunRepository.findById(fighter.getGuns().get(0).getId()).orElse(null).getRange();
+        //d10 diceroll
         int skillRoll = (int) (Math.random() * 10) + 1;
+        //calculating skill check and difficulty
         int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(skill) + skillRoll;
         int difficulty = getDifficultyByGunType(targetRange, range);
+        //returning result
         return skillCheck > difficulty ? "You hit the target!" : "You missed the target!";
     }
 }

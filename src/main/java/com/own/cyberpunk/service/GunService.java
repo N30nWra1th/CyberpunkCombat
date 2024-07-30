@@ -11,4 +11,6 @@ public interface GunService{
     void addGun(GunForm gunForm);
 
     void deleteGun(Long id);
+
+    void assignGun(Long fighterId, Long gunId);
 }
