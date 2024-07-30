@@ -1,12 +1,16 @@
 package com.own.cyberpunk.service.serviceImpl;
 
 import com.own.cyberpunk.domain.Fighter;
+import com.own.cyberpunk.domain.Gun;
 import com.own.cyberpunk.dto.FighterDto;
 import com.own.cyberpunk.dto.ShootingDto;
 import com.own.cyberpunk.enumeration.Attributes;
+import com.own.cyberpunk.enumeration.Skills;
+import com.own.cyberpunk.exception.GunNotFoundException;
 import com.own.cyberpunk.repository.FighterRepository;
 import com.own.cyberpunk.repository.GunRepository;
 import com.own.cyberpunk.service.FighterService;
+import com.own.cyberpunk.util.DiceRoller;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +19,11 @@ import java.util.stream.Collectors;
 
 @Service
 public class FighterServiceImpl implements FighterService {
-        private final FighterRepository fighterRepository;
-        private final ModelMapper modelMapper;
+    private final FighterRepository fighterRepository;
+    private final ModelMapper modelMapper;
     private final GunRepository gunRepository;
 
-    public FighterServiceImpl(FighterRepository fighterRepository, ModelMapper modelMapper, GunRepository gunRepository){
+    public FighterServiceImpl(FighterRepository fighterRepository, ModelMapper modelMapper, GunRepository gunRepository) {
         this.fighterRepository = fighterRepository;
         this.modelMapper = modelMapper;
         this.gunRepository = gunRepository;
@@ -66,6 +70,28 @@ public class FighterServiceImpl implements FighterService {
         return difficulty;
     }
 
+    private String getHitArea(int rollResult){
+        switch (rollResult){
+            case 1:
+            case 2:
+            case 3:
+                return "head";
+            case 4:
+                return "torso";
+            case 5:
+                return "right arm";
+            case 6:
+            case 7:
+                return "left arm";
+            case 8:
+            case 9:
+                return "right leg";
+            case 10:
+                return "left leg";
+            default:
+                return "<rolling error>";
+        }
+    }
     @Override
     public String shoot(ShootingDto shootingDto) {
         //getting fighter by id for skill and attribute points
@@ -75,13 +101,21 @@ public class FighterServiceImpl implements FighterService {
         String skill = shootingDto.getSkill();
         Integer targetRange = shootingDto.getTargetRange();
         //getting range of the gun
-        int range = gunRepository.findById(fighter.getGuns().get(0).getId()).orElse(null).getRange();
-        //d10 diceroll
-        int skillRoll = (int) (Math.random() * 10) + 1;
+        Gun gun = gunRepository.findById(fighter.getGuns().get(0).getId()).orElse(null);
+        if (fighter.getGuns().isEmpty() || gun == null) {
+            throw new RuntimeException("You don't have a gun, choom!");
+        }
+
+        int range = gun.getRange();
+
         //calculating skill check and difficulty
-        int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(skill) + skillRoll;
-        int difficulty = getDifficultyByGunType(targetRange, range);
-        //returning result
-        return skillCheck > difficulty ? "You hit the target!" : "You missed the target!";
+        try {
+            int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(Skills.valueOf(skill)) + DiceRoller.rollDice(10);
+            int difficulty = getDifficultyByGunType(targetRange, range);
+            //returning result
+            return skillCheck > difficulty ? skillCheck + "! You hit the target, choom! You hit'em in their " + getHitArea(DiceRoller.rollNaturalDTen()) + "!" : skillCheck + ". Too low, you missed the target, you gonk...";
+        } catch (GunNotFoundException e) {
+            return "You don't have a gun!";
+        }
     }
 }

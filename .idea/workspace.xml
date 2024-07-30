@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="First rough version of shooting method. Testing needed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/CyberpunkCombatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/FighterNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/GunNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/ValidationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/exception/Violation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/GunController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/GunService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/GunController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/GunController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/MeleeWeapons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/domain/MeleeWeapons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/GunService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/GunService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/GunServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +93,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.own.cyberpunk.exception" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
@@ -180,6 +185,7 @@
       <workItem from="1721899629981" duration="4911000" />
       <workItem from="1722327839799" duration="93000" />
       <workItem from="1722329026114" duration="833000" />
+      <workItem from="1722330387578" duration="5597000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
