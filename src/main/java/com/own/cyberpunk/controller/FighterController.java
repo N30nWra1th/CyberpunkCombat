@@ -1,6 +1,7 @@
 package com.own.cyberpunk.controller;
 
 import com.own.cyberpunk.dto.FighterDto;
+import com.own.cyberpunk.dto.MeleeDto;
 import com.own.cyberpunk.dto.ShootingDto;
 import com.own.cyberpunk.service.FighterService;
 import lombok.extern.slf4j.Slf4j;
@@ -56,5 +57,17 @@ public class FighterController {
     @ResponseStatus(HttpStatus.OK)
     public String shoot(@RequestBody ShootingDto shootingDto){
         return fighterService.shoot(shootingDto);
+    }
+
+//    @PostMapping("/melee")
+//    @ResponseStatus(HttpStatus.OK)
+//    public String melee(@RequestBody MeleeDto meleeDto){
+//        return fighterService.meleeAttack(meleeDto);
+//    }
+
+    @PostMapping("/damage/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public String damage(@PathVariable("id") Long id){
+        return fighterService.damageRoll(id);
     }
 }

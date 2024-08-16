@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ShootingDto {
-    Long id;
+    Long fighterId;
+    Long gunId;
     String skill;
     Integer targetRange;
 }

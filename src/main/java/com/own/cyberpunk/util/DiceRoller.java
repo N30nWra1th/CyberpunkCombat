@@ -9,18 +9,21 @@ public class DiceRoller {
 
     public static int rollDice(int numberOfDice, int diceSides, int modifier) {
         int result = 0;
+        int roll = 0;
 
-        for(int i = 0; i < numberOfDice; i++){
-            result = (int) ((Math.random() * diceSides) + 1) + modifier;
-        }
-
-
-        if (diceSides == 10 && result == 10) {
-            log.info("Very nice, it's a ten, rolling again and adding the result");
-            result += rollDice(1,10,0);
-        } else if (diceSides == 10 && result == 1) {
-            log.error("Critical failure, choom!");
-            return 1;
+        System.out.println("Rolling " + numberOfDice + "d" + diceSides + " + " + modifier);
+        for(int i = 1; i <= numberOfDice; i++){
+            roll = (int) ((Math.random() * diceSides) + 1) + modifier;
+            System.out.println("roll number " + i + " is " + roll + " where " + modifier + " is the modifier");
+            result+= roll;
+            System.out.println("accumulated result is " + result);
+            if (diceSides == 10 && result == 10) {
+                log.info("Very nice, it's a ten, rolling again and adding the result");
+                result += rollDice(numberOfDice, diceSides, modifier);
+            } else if (diceSides == 10 && result == 1) {
+                log.error("Critical failure, choom!");
+                return 1;
+            }
         }
         return result;
     }

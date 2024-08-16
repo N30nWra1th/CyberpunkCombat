@@ -10,6 +10,7 @@ import com.own.cyberpunk.exception.GunNotFoundException;
 import com.own.cyberpunk.repository.FighterRepository;
 import com.own.cyberpunk.repository.GunRepository;
 import com.own.cyberpunk.service.FighterService;
+import com.own.cyberpunk.util.DiceReader;
 import com.own.cyberpunk.util.DiceRoller;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -94,29 +95,29 @@ public class FighterServiceImpl implements FighterService {
     }
     @Override
     public String shoot(ShootingDto shootingDto) {
-        //getting fighter by id for skill and attribute points
-        Long id = shootingDto.getId();
+        Long id = shootingDto.getFighterId();
         Fighter fighter = fighterRepository.findById(id).orElse(null);
-        //getting skill and target range from shootingDto
         String skill = shootingDto.getSkill();
         Integer targetRange = shootingDto.getTargetRange();
-        //getting range of the gun
-        Gun gun = gunRepository.findById(fighter.getGuns().get(0).getId()).orElse(null);
+        Gun gun = gunRepository.findById(shootingDto.getGunId()).orElse(null);
+        int range = gun.getRange();
         if (fighter.getGuns().isEmpty() || gun == null) {
             throw new RuntimeException("You don't have a gun, choom!");
         }
-
-        int range = gun.getRange();
-
-        //calculating skill check and difficulty
         try {
             int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(Skills.valueOf(skill)) + DiceRoller.rollDice(1,10,0);
             int difficulty = getDifficultyByGunType(targetRange, range);
-            //returning result
             return skillCheck > difficulty ? skillCheck + "! You got'em, choom! You hit'em in their " + getHitArea(DiceRoller.rollNaturalDTen()) : skillCheck + ". Too low... You missed the target, you gonk!";
         } catch (GunNotFoundException e) {
             return "You don't have a gun!";
         }
+    }
+
+    @Override
+    public String damageRoll(Long id) {
+        String dice = gunRepository.findById(id).get().getDamage();
+        int damage = DiceReader.diceConverter(dice);
+        return "Your weapon did " + damage + " points of damage.";
     }
 
 

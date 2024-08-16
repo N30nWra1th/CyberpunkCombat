@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Implemented static diceroller and finished shooting method in the FigherService layer.&#10;Next step is to create a method to recognise dice type by weapon, and implement damage.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceReader.java" afterDir="false" />
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Created a method to take any type of dice and calculate result. For damage calculation mainly.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/ShootingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/ShootingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/util/DiceRoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/util/DiceRoller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +187,7 @@
       <workItem from="1723628626363" duration="191000" />
       <workItem from="1723628836160" duration="766000" />
       <workItem from="1723723981014" duration="1440000" />
-      <workItem from="1723793742548" duration="2635000" />
+      <workItem from="1723793742548" duration="6406000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -306,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722338172814</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Created a method to take any type of dice and calculate result. For damage calculation mainly.">
+      <option name="closed" value="true" />
+      <created>1723808710329</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723808710329</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +332,7 @@
     <MESSAGE value="Melee dtos created, moving on to basic methods" />
     <MESSAGE value="First rough version of shooting method. Testing needed." />
     <MESSAGE value="Implemented static diceroller and finished shooting method in the FigherService layer.&#10;Next step is to create a method to recognise dice type by weapon, and implement damage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented static diceroller and finished shooting method in the FigherService layer.&#10;Next step is to create a method to recognise dice type by weapon, and implement damage." />
+    <MESSAGE value="Created a method to take any type of dice and calculate result. For damage calculation mainly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a method to take any type of dice and calculate result. For damage calculation mainly." />
   </component>
 </project>
