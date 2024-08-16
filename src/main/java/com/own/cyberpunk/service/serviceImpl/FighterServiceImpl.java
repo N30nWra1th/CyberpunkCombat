@@ -110,12 +110,14 @@ public class FighterServiceImpl implements FighterService {
 
         //calculating skill check and difficulty
         try {
-            int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(Skills.valueOf(skill)) + DiceRoller.rollDice(10);
+            int skillCheck = fighter.getAttributes().get(Attributes.REFLEX) + fighter.getSkills().get(Skills.valueOf(skill)) + DiceRoller.rollDice(1,10,0);
             int difficulty = getDifficultyByGunType(targetRange, range);
             //returning result
-            return skillCheck > difficulty ? skillCheck + "! You hit the target, choom! You hit'em in their " + getHitArea(DiceRoller.rollNaturalDTen()) + "!" : skillCheck + ". Too low, you missed the target, you gonk...";
+            return skillCheck > difficulty ? skillCheck + "! You got'em, choom! You hit'em in their " + getHitArea(DiceRoller.rollNaturalDTen()) : skillCheck + ". Too low... You missed the target, you gonk!";
         } catch (GunNotFoundException e) {
             return "You don't have a gun!";
         }
     }
+
+
 }
