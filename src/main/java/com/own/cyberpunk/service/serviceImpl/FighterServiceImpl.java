@@ -33,8 +33,6 @@ public class FighterServiceImpl implements FighterService {
     @Override
     public void createCharacter(FighterDto fighterDto) {
         Fighter fighter = modelMapper.map(fighterDto, Fighter.class);
-        System.out.println(fighter);
-        System.out.println(fighterDto);
         fighter.setAttributes(fighterDto.getAttributes());
         fighter.setSkills(fighterDto.getSkills());
         fighter.setGuns(null);
@@ -118,6 +116,12 @@ public class FighterServiceImpl implements FighterService {
         String dice = gunRepository.findById(id).get().getDamage();
         int damage = DiceReader.diceConverter(dice);
         return "Your weapon did " + damage + " points of damage.";
+    }
+
+    @Override
+    public int initRoll(Long id) {
+        Fighter fighter = fighterRepository.findById(id).orElse(null);
+        return fighter.getAttributes().get(Attributes.REFLEX) + fighter.getAttributes().get(Attributes.COMBAT_SENSE) + DiceRoller.rollNaturalDTen();
     }
 
 

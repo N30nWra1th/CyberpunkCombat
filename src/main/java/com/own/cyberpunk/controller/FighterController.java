@@ -53,6 +53,12 @@ public class FighterController {
         }
     }
 
+    @PostMapping("/init/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public int rollInitiative(@PathVariable("id") Long id){
+        return fighterService.initRoll(id);
+    }
+
     @PostMapping("/shoot")
     @ResponseStatus(HttpStatus.OK)
     public String shoot(@RequestBody ShootingDto shootingDto){
@@ -68,6 +74,7 @@ public class FighterController {
     @PostMapping("/damage/{id}")
     @ResponseStatus(HttpStatus.OK)
     public String damage(@PathVariable("id") Long id){
+        log.info("Initiative for fighter number " + id + "rolled.");
         return fighterService.damageRoll(id);
     }
 }

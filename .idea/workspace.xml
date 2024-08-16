@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Created a method to take any type of dice and calculate result. For damage calculation mainly.">
+    <list default="true" id="26b16c21-4ab6-4957-8305-ddf90b9b0690" name="Changes" comment="Worked out minor issues with damage roll, now gun combat and damage roll by gunId works.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/ShootingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/dto/ShootingDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/util/DiceRoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/util/DiceRoller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/dto/ShootingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/dto/ShootingDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +187,7 @@
       <workItem from="1723628626363" duration="191000" />
       <workItem from="1723628836160" duration="766000" />
       <workItem from="1723723981014" duration="1440000" />
-      <workItem from="1723793742548" duration="6406000" />
+      <workItem from="1723793742548" duration="7297000" />
     </task>
     <task id="LOCAL-00001" summary="Started creating domains and enumerations.">
       <option name="closed" value="true" />
@@ -317,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723808710329</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Worked out minor issues with damage roll, now gun combat and damage roll by gunId works.">
+      <option name="closed" value="true" />
+      <created>1723814684289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723814684289</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +341,7 @@
     <MESSAGE value="First rough version of shooting method. Testing needed." />
     <MESSAGE value="Implemented static diceroller and finished shooting method in the FigherService layer.&#10;Next step is to create a method to recognise dice type by weapon, and implement damage." />
     <MESSAGE value="Created a method to take any type of dice and calculate result. For damage calculation mainly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a method to take any type of dice and calculate result. For damage calculation mainly." />
+    <MESSAGE value="Worked out minor issues with damage roll, now gun combat and damage roll by gunId works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked out minor issues with damage roll, now gun combat and damage roll by gunId works." />
   </component>
 </project>

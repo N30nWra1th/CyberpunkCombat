@@ -20,7 +20,7 @@ public class DiceRoller {
             if (diceSides == 10 && result == 10) {
                 log.info("Very nice, it's a ten, rolling again and adding the result");
                 result += rollDice(numberOfDice, diceSides, modifier);
-            } else if (diceSides == 10 && result == 1) {
+            } else if (i == 1 && diceSides == 10 && result == 1) {
                 log.error("Critical failure, choom!");
                 return 1;
             }

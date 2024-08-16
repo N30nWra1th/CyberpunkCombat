@@ -15,4 +15,6 @@ public interface FighterService {
     String shoot(ShootingDto shootingDto);
 
     String damageRoll(Long id);
+
+    int initRoll(Long id);
 }
