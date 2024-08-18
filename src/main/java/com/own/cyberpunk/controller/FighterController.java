@@ -23,8 +23,15 @@ public class FighterController {
     @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
     public void createCharacter(@RequestBody FighterDto fighterDto) {
-        log.info("New fighter has been created successfully.");
+        log.info("New fighter, " + fighterDto.getName() + ", has been created successfully.");
         fighterService.createCharacter(fighterDto);
+    }
+
+    @PostMapping("/createNpc")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void createRandomNpc(@RequestBody FighterDto npcDto, @RequestParam String difficulty){
+        log.info(npcDto.getRole() + " has been created successfully.");
+        fighterService.createNpc(npcDto, difficulty);
     }
 
     @GetMapping
@@ -64,11 +71,11 @@ public class FighterController {
     public String shoot(@RequestBody ShootingDto shootingDto){
         return fighterService.shoot(shootingDto);
     }
-
 //    @PostMapping("/melee")
 //    @ResponseStatus(HttpStatus.OK)
 //    public String melee(@RequestBody MeleeDto meleeDto){
 //        return fighterService.meleeAttack(meleeDto);
+
 //    }
 
     @PostMapping("/damage/{id}")

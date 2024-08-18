@@ -17,4 +17,6 @@ public interface FighterService {
     String damageRoll(Long id);
 
     int initRoll(Long id);
+
+    void createNpc(FighterDto npcDto, String difficulty);
 }

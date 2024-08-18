@@ -9,10 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/controller/FighterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/FighterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/service/serviceImpl/FighterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/own/cyberpunk/util/DiceRoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/controller/FighterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/dto/ShootingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/dto/ShootingDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/own/cyberpunk/service/FighterService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -41,6 +41,28 @@ public class FighterServiceImpl implements FighterService {
     }
 
     @Override
+    public void createNpc(FighterDto npcDto, String difficulty) {
+        Fighter npc = modelMapper.map(npcDto, Fighter.class);
+        int score = 3;
+        int multiplier = 0;
+        switch (difficulty) {
+            case "Easy":
+                multiplier = 3;
+            case "Medium":
+                multiplier = 5;
+            case "Hard":
+                multiplier = 7;
+            default:
+                multiplier = 10;
+        }
+
+
+
+        fighterRepository.save(npc);
+
+    }
+
+    @Override
     public List<FighterDto> getAllCharacters() {
         List<Fighter> fighters = (List<Fighter>) fighterRepository.findAll();
 
@@ -68,7 +90,6 @@ public class FighterServiceImpl implements FighterService {
         }
         return difficulty;
     }
-
     private String getHitArea(int rollResult){
         switch (rollResult){
             case 1:
@@ -91,6 +112,7 @@ public class FighterServiceImpl implements FighterService {
                 return "<rolling error>";
         }
     }
+
     @Override
     public String shoot(ShootingDto shootingDto) {
         Long id = shootingDto.getFighterId();
