@@ -71,6 +71,7 @@ public class FighterController {
     public String shoot(@RequestBody ShootingDto shootingDto){
         return fighterService.shoot(shootingDto);
     }
+
 //    @PostMapping("/melee")
 //    @ResponseStatus(HttpStatus.OK)
 //    public String melee(@RequestBody MeleeDto meleeDto){

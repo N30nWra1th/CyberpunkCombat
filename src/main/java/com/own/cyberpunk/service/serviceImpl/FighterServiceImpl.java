@@ -42,21 +42,27 @@ public class FighterServiceImpl implements FighterService {
 
     @Override
     public void createNpc(FighterDto npcDto, String difficulty) {
-        Fighter npc = modelMapper.map(npcDto, Fighter.class);
+//        Fighter npc = modelMapper.map(npcDto, Fighter.class);
+        Fighter npc = new Fighter();
+        Fighter savedFighter = fighterRepository.save(npc);
+
+        npc.setName("npc" + savedFighter.getId());
+        npc.setGuns(null);
+        npc.setMeleeWeapons(null);
         int score = 3;
-        int multiplier = 0;
+        int addition = 0;
         switch (difficulty) {
             case "Easy":
-                multiplier = 3;
+                addition = 3;
             case "Medium":
-                multiplier = 5;
+                addition = 5;
             case "Hard":
-                multiplier = 7;
+                addition = 7;
             default:
-                multiplier = 10;
+                addition = 10;
         }
-
-
+        int attSkillPointGen = score + (int) (Math.random() * addition + 1);
+//        skill és attribute maphez foreach?
 
         fighterRepository.save(npc);
 
